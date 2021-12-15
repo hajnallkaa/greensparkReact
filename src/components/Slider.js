@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 
 function Slider() {
-    const [slider, setSlider] = useState(true);
+    const [slider, setSlider] = useState(false);
     const handleSlider = () => {
         setSlider(!slider);
     };

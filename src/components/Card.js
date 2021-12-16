@@ -36,7 +36,7 @@ function Card({type, amount, action, backColor, txColor, logos}) {
 
         <div className="content">
            <Checkbox/>
-            <Colors backgroundChange={backgroundChange}/>
+            <Colors backgroundChange={backgroundChange} color={color}/>
            <Slider />
         </div>
 

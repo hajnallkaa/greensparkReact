@@ -192,6 +192,15 @@ input:checked + .slider:before {
   height: 20px;
   }
 
+.selected{
+  border-style: none;
+  margin-right: 2px;
+  border: 3px solid #666666;
+  width: 20px;
+  height: 20px;
+  transform: translate(0px, -2px)
+}
+
 .color:hover{
   opacity: 80%;
   }

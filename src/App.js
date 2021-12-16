@@ -1,9 +1,8 @@
 import './App.css';
-import Logo from "./assets/Greenspark.png";
-import Logo2 from "./assets/Greenspark2.png";
 import  Card from './components/Card';
 import Header from './components/Header';
 import React, {useState, useEffect} from 'react';
+import {defaultColors} from './utils/utils';
 
 function App() {
 
@@ -26,16 +25,13 @@ function App() {
       )
   }, [])
 
- const backColor = ["#2E3A8C", "#3B755F", "#F2EBDB"];
- const txColor =["#ffffff", "#ffffff", "#3b755f"];
- const logos =[Logo, Logo, Logo2];
 
   return (
     <div className="main">
       <Header />
       <div className='grid'>
       {items.map((item, i) =>
-        <Card key={item.id} type={item.type} amount={item.amount} action={item.action} backColor={backColor[i]} txColor={txColor[i]} logos={logos[i]}/>
+        <Card key={item.id} type={item.type} amount={item.amount} action={item.action} backColor={defaultColors[i].backColor} txColor={defaultColors[i].textColor} logos={defaultColors[i].logo}/>
       )}
       </div>
     </div>
